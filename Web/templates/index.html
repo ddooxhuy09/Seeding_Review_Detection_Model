@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Scraper</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="enterform">
+    <h1>Enter your URL</h1>
+    <form action="/scrape" method="post">
+      <div class="brutalist-container">
+        <input
+          placeholder="TYPE HERE"
+          class="brutalist-input smooth-type"
+          type="text"
+          id="product_url" name="product_url" required
+        />
+        <div class="button-borders">
+          <button class="primary-button" type="submit"> BUTTON
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
